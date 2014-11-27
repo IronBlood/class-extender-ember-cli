@@ -4,8 +4,10 @@
  * https://gist.github.com/shakyShane/5944153
  */
 
-(function (root) {
+(function (undefined) {
 	"use strict";
+
+	var globalScope = typeof global !== 'undefined' ? global : this;
 
 	if (!Object.create) {
 		Object.create = (function () {
@@ -16,7 +18,7 @@
 				if (arguments.length != 1) {
 					throw new Error("Object.create implementation only accepts one parameter.");
 				}
-				
+
 				F.prototype = o;
 				return new F();
 			};
@@ -98,8 +100,8 @@
 
 	//Exports
 	//AMD
-	if (typeof define !== 'undefined' && define.amd) {
-		define([], function () {
+	if (typeof define === 'function' && define.amd) {
+		define('Class', function (require, exports, module) {
 			return BaseClass;
 		});
 	}
@@ -111,6 +113,7 @@
 
 	//Script tag
 	else {
-		root.ClassExtender = BaseClass;
+		//root.ClassExtender = BaseClass;
+		globalScope.Class = BaseClass;
 	}
-} (this));
+}).call(this);

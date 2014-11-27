@@ -1,21 +1,23 @@
 {
-	"name": "class-extender",
-	"version": "1.0.9",
-	"description": "Simple class inheritance",
+	"name": "class-extender-ember-cli",
+	"version": "1.0.0",
+	"description": "Simple class inheritance working with ember-cli",
 	"author": {
-		"name": "Zlatko Fedor",
-		"email": "zfedor@gmail.com",
-		"url": "http://www.cherrysro.com/"
+		"name": "Yang Shen",
+		"email": "aplshenyang@gmail.com",
+		"url": "http://ironblood.net/"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git://github.com/seeden/class-extender.git"
+		"url": "git://github.com/ironblood/class-extender-ember-cli.git"
 	},
 	"keywords": [
 		"class",
 		"extend",
 		"inheritance",
-		"amd"
+		"amd",
+		"ember",
+		"ember-cli"
 	],
 	"private": false,
 	"licenses": [
@@ -32,7 +34,7 @@
 		"test": "node node_modules/grunt-cli/bin/grunt test"
 	},	
 	"bugs": {
-		"url": "https://github.com/seeden/class-extender/issues"
+		"url": "https://github.com/ironblood/class-extender-ember-cli/issues"
 	},
 	"devDependencies": {
 		"grunt": "~0.4.4",

@@ -24,13 +24,17 @@ Bower:
 
 	$ bower install class-extender
 
+ember-cli:
+
+    $ bower install class-extender-ember-cli
+
 ## Event emitter
 
 If your are looking for simple event emitter library you can use [class-evented](https://github.com/seeden/class-evented) library
 
 ## Examples
 
-Use as CommonJS module:
+### Use as CommonJS module:
 
 	var Class = require('class-extender');
 
@@ -65,7 +69,7 @@ Use as CommonJS module:
 	admin instanceof Class; // => true
 
 
-Use as AMD module:
+### Use as AMD module:
 person.js:
 
 	define(['class-extender'], function(Class) {
@@ -108,6 +112,19 @@ test.js
 		admin instanceof Person; // => true
 		admin instanceof Class; // => true
 	});
+
+### Use with ember-cli:
+Brocfile.js
+
+```JavaScript
+    app.import('bower_components/class-extender-ember-cli/index.js');
+```
+
+So now `Class` is a global object, please insert this line in your JS files before calling `Class`:
+
+```JavaScript
+/*global Class */
+```
 
 ## Multiple inheritance
 

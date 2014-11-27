@@ -1,14 +1,16 @@
 {
-	"name": "class-extender",
-	"description": "Simple class inheritance",
-	"version": "1.0.7",
+	"name": "class-extender-ember-cli",
+	"description": "Simple class inheritance working with ember-cli",
+	"version": "1.0.0",
 	"keywords": [
 		"class",
 		"extend",
 		"inheritance",
-		"amd"
+		"amd",
+		"ember",
+		"ember-cli"
 	],
-	"homepage": "https://github.com/seeden/class-extend",
+	"homepage": "https://github.com/ironblood/class-extender-ember-cli",
 	"main": [
 		"index.js"
 	],
