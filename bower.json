@@ -1,7 +1,7 @@
 {
 	"name": "class-extender-ember-cli",
 	"description": "Simple class inheritance working with ember-cli",
-	"version": "1.0.0",
+	"version": "1.0.10",
 	"keywords": [
 		"class",
 		"extend",
